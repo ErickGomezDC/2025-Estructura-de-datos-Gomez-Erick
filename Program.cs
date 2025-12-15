@@ -1,21 +1,54 @@
 ﻿using System;
 
-class Program
+namespace _2026_Estructura_de_datos_Gomez_Erick
 {
-    static void Main(string[] args)
+    class Program
     {
-        // Crear un círculo de radio 5
-        Circulo c = new Circulo(5);
-        Console.WriteLine("=== CÍRCULO ===");
-        Console.WriteLine("Área del círculo: " + c.CalcularArea());
-        Console.WriteLine("Perímetro del círculo: " + c.CalcularPerimetro());
+        static void Main(string[] args)
+        {
+            int opcion;
 
-        Console.WriteLine(); // Línea en blanco
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("=== MENÚ PRINCIPAL ===");
+                Console.WriteLine("Aqui se encontraran los codigos de cada semana correspondiente eliga que semana quiere ejecutar:");
+                Console.WriteLine("1. Semana 02: Figuras Geometricas (datos primitivos)");
+                Console.WriteLine("2. Semana 03: Registro de Estudiantes (Arrays y Matrices)");
+                Console.WriteLine("3. Semana 04: Proxima tarea...");
+                Console.WriteLine("0. Salir");
+                Console.Write("Seleccione una opción: ");
 
-        // Crear un rectángulo de alto 4 y ancho 7
-        Rectangulo r = new Rectangulo(4, 7);
-        Console.WriteLine("=== RECTÁNGULO ===");
-        Console.WriteLine("Área del rectángulo: " + r.CalcularArea());
-        Console.WriteLine("Perímetro del rectángulo: " + r.CalcularPerimetro());
+                opcion = int.Parse(Console.ReadLine()!);
+                Console.Clear();
+
+                switch (opcion)
+                {
+                    case 1:
+                        FigurasGeometricas.Ejecutar();
+                        break;
+
+                    case 2:
+                        RegistroEstudiante.Ejecutar();
+                        break;
+                    
+
+                    case 0:
+                        Console.WriteLine("Saliendo del programa...");
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+
+                if (opcion != 0)
+                {
+                    Console.WriteLine("\nPresione una tecla para volver al menú...");
+                    Console.ReadKey();
+                }
+
+            } while (opcion != 0);
+        }
     }
 }
