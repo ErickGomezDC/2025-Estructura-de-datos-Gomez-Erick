@@ -19,6 +19,7 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
                 Console.WriteLine("4. Semana 05: Listas");
                 Console.WriteLine("5. Semana 06: Listas Enlazadas");
                 Console.WriteLine("6. Semana 07: Ejercicios uso de Pilas (Stacks)");
+                Console.WriteLine("7. Semana 08: Practico Experimental 02 (Colas)");
                 Console.WriteLine("0. Salir");
                 Console.Write("Seleccione una opción: ");
 
@@ -46,11 +47,14 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
                     case 5:
                         MenuSemana06();
                         break;
-                    
+
                     case 6:
                         Semana07_Pilas.Ejecutar();
                         break;
-                        
+
+                    case 7:
+                        PracticoExperimental02.Ejecutar();
+                        break;
 
                     case 0:
                         Console.WriteLine("Saliendo del programa...");
