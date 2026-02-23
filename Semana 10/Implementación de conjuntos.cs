@@ -8,9 +8,6 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
     {
         public static void Ejecutar()
         {
-
-            // 1. CREACIÓN DEL CONJUNTO UNIVERSAL DE CIUDADANOS
-
             // HashSet se usa porque representa matemáticamente un conjunto:
             // no permite duplicados y permite operaciones de teoría de conjuntos.
             HashSet<string> ciudadanos = new HashSet<string>();
@@ -21,7 +18,7 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
                 ciudadanos.Add("Ciudadano " + i);
             }
 
-            // 2. CONJUNTO VACUNADOS PFIZER
+            // CONJUNTO VACUNADOS PFIZER
 
             HashSet<string> pfizer = new HashSet<string>();
 
@@ -31,7 +28,7 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
                 pfizer.Add("Ciudadano " + i);
             }
 
-            // 3. CONJUNTO VACUNADOS ASTRAZENECA
+            //CONJUNTO VACUNADOS ASTRAZENECA
             
             HashSet<string> astra = new HashSet<string>();
 
