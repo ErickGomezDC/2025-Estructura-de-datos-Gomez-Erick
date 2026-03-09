@@ -22,6 +22,7 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
                 Console.WriteLine("7. Semana 08: Practico Experimental 02 (Colas)");
                 Console.WriteLine("8. Semana 10: Implementación de Conjuntos");
                 Console.WriteLine("9. Semana 11: Traductor Básico (Diccionarios)");
+                Console.WriteLine("10. Semana 12: Practico Experimental 03 (Conjuntos y Mapas)");
                 Console.WriteLine("0. Salir");
                 Console.Write("Seleccione una opción: ");
 
@@ -64,6 +65,10 @@ namespace _2026_Estructura_de_datos_Gomez_Erick
 
                     case 9:
                         TraductorBasico.Ejecutar();
+                        break;
+
+                    case 10:
+                        Practico_experimental_03.Ejecutar();
                         break;
 
                     case 0:
